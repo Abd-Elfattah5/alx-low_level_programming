@@ -1,0 +1,31 @@
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
+/* more headers goes there */
+
+/* betty style doc for function main goes there */
+/**
+ *main - funtion to print chars
+ *Return: always 0 (success)
+ */
+int main(void)
+{	int i;
+	for (i = 97; i < 123 ; i++)
+	{
+		char ch;
+
+		ch = i;
+
+		putchar(ch);
+	}
+	for (i = 65; i < 91 ; i++)
+	{
+		char ch;
+
+		ch = i;
+
+		putchar(ch);
+	}
+	putchar('\n');
+	return (0);
+}
