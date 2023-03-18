@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<unistd.h>
 /**
   *main - Entry pint
   *Return: always 1 (success)
@@ -6,11 +7,6 @@
   */
 int main(void)
 {
-	char quote[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
-	int i;
-
-	for (i = 0; i < sizeof(quote) / sizeof(char) ; i++)
-		putchar(quote[i]);
-	putchar('\n');
+	fputs("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", stdout);
 	return (1);
 }
