@@ -1,0 +1,15 @@
+#include<stdio>
+/**
+  *main - Entry pint
+  *Return: always 1 (success)
+  *this is a function to print using putchar function
+  */
+int main(void)
+{
+	
+	char statement[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+	for (int i = 0; i < sizeof(statement)/sizeof(char) ; i++){
+		putchar(statement[i]);
+	}
+	return (1);
+}
