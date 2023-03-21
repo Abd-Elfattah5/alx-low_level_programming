@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-  *print_alphabet - Prints the alphabet in lowercase.
+  *print_alphabet_x10 - Prints the alphabet in lowercase x10.
   *Return: always 0 (success)
  */
 void print_alphabet_x10(void)
