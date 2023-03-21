@@ -1,11 +1,16 @@
 #include <stdio.h>
-
 /**
-  *main - Entry point
+  *main - entry point
   *Return: always 0 (success)
   */
 int main(void)
 {
-	printf("_putchar\n");
+	int i;
+	char word[] = "_putchar\n";
+
+	for (i = 0; i < 9; i++)
+	{
+		putchar(word[i]);
+	}
 	return (0);
 }
