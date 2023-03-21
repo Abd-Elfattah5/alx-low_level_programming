@@ -1,5 +1,5 @@
 #ifndef INV_TREE_H
 #define INV_TREE_H
-#include <stdio.h>
+int _putchar(char c);
 void print_alphabet(void);
 #endif
