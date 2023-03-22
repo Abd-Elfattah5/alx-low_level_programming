@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
   *print_to_98 - a function to go to 98
@@ -28,5 +29,4 @@ void print_to_98(int n)
 				printf("%d\n", j);
 		}
 	}
-	
 }
