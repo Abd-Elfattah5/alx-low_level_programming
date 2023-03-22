@@ -10,8 +10,6 @@ int main(void)
 	int i = 0;
 	unsigned long fib1 = 0, fib2 = 1, sum;
 
-	printf("1");
-	printf(", 2");
 	while (i != 50)
 	{
 		sum = fib1 + fib2;
