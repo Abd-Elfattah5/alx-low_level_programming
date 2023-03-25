@@ -2,7 +2,7 @@
 
 /**
   * _isupper - function to check the letter case
-  * Return: return 1 if letter is upper case 
+  *Return: return 1 if letter is upper case
   * 0 otherwise
   * @c: is the letter ascii to be checked
   */
