@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
-  *main - program to indicate the mutiples of 3 and 5
+  *main - a program to indicate the mutiples of 3 and 5
   *Return: always 0 (success)
   */
 int main(void)
