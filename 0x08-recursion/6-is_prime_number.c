@@ -17,6 +17,7 @@ int calc_prime(int n, int fac)
 
 /**
   *is_prime_number - funcion to check if a number is prime
+  *Return: 1 if the number is prime and 0 otherwise
   *@n: number to be checked
   */
 int is_prime_number(int n)
