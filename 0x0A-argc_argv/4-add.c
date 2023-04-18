@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <string.h>
 /**
   *main - program to print numbers addition
   *Return: (0) if success, (1) if false.
@@ -9,21 +9,27 @@
   */
 int main(int argc, char *argv[])
 {
+	int sum = 0;
+
 	if (argc == 1)
-		printf("0\n");
+		printf("%d\n", sum);
 	else
 	{
 		int i;
-		int sum = 0;
+		long unsigned int j;
 
 		for (i = 1; i < argc; i++)
-			if ((argv[i])[0] > 47 && (argv[i])[0] < 58)
-				sum += atoi(argv[i]);
-			else
+		{
+			for(j = 0; j < strlen(argv[i]); j++)
 			{
-				printf("Error\n");
-				return (1);
+				if (!(argv[i][j] > 47 && argv[i][j] < 58))
+				{
+					printf("Error\n");
+					return (1);
+				}
 			}
+			sum += atoi(argv[i]);
+		}
 		printf("%d\n", sum);
 	}
 	return (0);
