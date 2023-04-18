@@ -17,9 +17,7 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	else if (atoi(argv[1]) < 0)
-	{
 		printf("%d\n", sum);
-	}
 	else
 	{
 		int cents = atoi(argv[1]);
@@ -27,30 +25,16 @@ int main(int argc, char *argv[])
 		while (cents != 0)
 		{
 			if (cents >= 25)
-			{
 				cents -= 25;
-				sum += 1;
-			}
 			else if (cents >= 10)
-			{
 				cents -= 10;
-				sum += 1;
-			}
 			else if (cents >= 5)
-			{
 				cents -= 5;
-				sum += 1;
-			}
 			else if (cents >= 2)
-			{
 				cents -= 2;
-				sum += 1;
-			}
 			else
-			{
 				cents -= 1;
-				sum += 1;
-			}
+			sum += 1;
 		}
 		printf("%d\n", sum);
 	}
