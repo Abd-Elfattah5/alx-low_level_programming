@@ -16,11 +16,11 @@ int main(int argc, char *argv[])
 	else
 	{
 		int i;
-		long unsigned int j;
+		unsigned int j;
 
 		for (i = 1; i < argc; i++)
 		{
-			for(j = 0; j < strlen(argv[i]); j++)
+			for (j = 0; j < strlen(argv[i]); j++)
 			{
 				if (!(argv[i][j] > 47 && argv[i][j] < 58))
 				{
