@@ -11,11 +11,11 @@ int main(int argc, char *argv[])
 {
 	if (argc == 2)
 	{
-		 int N_bytes, i, (*f)(int, char **);
-		 unsigned char code;
+		int N_bytes, i, (*f)(int, char **);
+		unsigned char code;
 
-		 N_bytes = atoi(argv[1]);
-		 f = main;
+		N_bytes = atoi(argv[1]);
+		f = main;
 
 		if ((N_bytes) >= 0)
 		{
@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		printf("Error");
+		printf("Error\n");
 		exit(1);
 	}
 	printf("\n");
