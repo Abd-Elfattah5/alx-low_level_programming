@@ -13,7 +13,7 @@ void print_all(const char * const format, ...)
 
 	va_start(LP, format);
 
-	while (!(format[n] == '\0'))
+	while (format && format[n])
 		n++;
 
 	while (i < n)
