@@ -21,7 +21,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 		if (i == n - 1)
 			break;
-		else if (*separator)
+		else if (!(*separator == NULL || *separator == 0))
 			printf("%s", separator);
 	}
 	printf("\n");
