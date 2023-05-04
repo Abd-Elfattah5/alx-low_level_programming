@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-  * binary_to_uint - turn a binary to unsigned integer
-  * Return : the number after conversion or (0) if failed
-  * @b: the binary number to convert
+  *binary_to_uint - turn a binary to unsigned integer
+  *Return: the number after conversion or (0) if failed
+  *@b: the binary number to convert
   */
 unsigned int binary_to_uint(const char *b)
 {
@@ -23,13 +23,9 @@ unsigned int binary_to_uint(const char *b)
 	{
 		if (*temp != '0' && *temp != '1')
 			return (0);
-		else
-		{
-			num += (i * ((*temp) - '0'));
-			i = i << 1;
-		}
+		num += (i * ((*temp) - '0'));
+		i = i << 1;
 		temp--;
 	}
-	
 	return (num);
 }
