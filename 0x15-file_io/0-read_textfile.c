@@ -10,22 +10,22 @@
   */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t i;
-	int fd;
+	ssize_t i, fd;
 	char temp = 0;
 
 	if (!filename || letters == 0)
 		return (0);
-	if (open(filename,O_RDONLY) == -1)
+	fd = open(filename, O_RDONLY);
+
+	if (fd == -1)
 		return (0);
-	fd = open(filename,O_RDONLY);
 	i = 0;
-	
+
 	while (temp != EOF)
 	{
 		if (read(fd, &temp, 1) == -1)
 			return (0);
-		if (write(1, &temp, 1) == -1)
+		if (write(STDOUT_FILENO, &temp, 1) == -1)
 			return (0);
 		i++;
 	}
