@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
 		wr_l = write(fd_2, temp, rd_l);
 
 		if (wr_l == -1)
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(98);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 	}
 	if (close(fd_1) == -1)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_1), exit(100);
