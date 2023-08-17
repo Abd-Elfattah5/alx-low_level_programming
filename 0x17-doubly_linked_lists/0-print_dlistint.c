@@ -5,18 +5,24 @@
  * @h: the head of the linked list*/
 size_t print_dlistint(const dlistint_t *h)
 {
-	dlistint_t *temp;
 	size_t nodes = 0;
 	
-	if (h == NULL || *h == NULL)
+	if (h == NULL)
 		return (0);
-	temp = *h;
 
-	while (temp != NULL)
+	while (h->next != NULL)
 	{
-		printf("%d\n", temp->n);
+		printf("%d\n", h->n);
 		nodes += 1;
-		temp = temp->next;
+		h = h->next;
 	}
+	printf("%d\n", h->n);
+	nodes += 1;
+
+	while (h->prev != NULL)
+	{
+		h = h->prev;
+	}
+
 	return (nodes);
 }
