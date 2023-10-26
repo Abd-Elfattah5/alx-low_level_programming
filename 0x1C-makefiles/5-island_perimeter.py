@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """this module to solve the the island perimeter problem"""
 
+
 def island_perimeter(grid):
     """this function calculates the grid of the island"""
     width = len(grid[0])
